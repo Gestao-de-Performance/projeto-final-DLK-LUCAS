@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio Lucas nogueira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#"><img src="imagens/logo-verde.png" alt=""></a>
+        <button class="fechado" onclick="clickMenu()">
+            <picture>
+                <source media="(max-width: 767px)" srcset="imagens/menufv.png" type="image/png">
+                        <img src="imagens/Menuf.png"alt="">
+                </picture>
+            </button>
+            <menu id="itens">
+                <ul>
+                    <li class="contato"><a href="#">Contato</a></li>
+                    <li class="portifolio"><a href="#">Projetos</a></li>
+                    <li class="outros"><a href="#">outros</a></li>
+                </ul>
+                <button class="aberto" onclick="closeMenu()">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="imagens/menuapq.png" type="image/png">
+                        <img src="imagens/Menua.png"alt="">
+                    </picture>
+                </button>
+                </menu>
+    </header>
+    <div class="prin">
+        <section>
+            <h1>Desenvolvedor <br> FrontEnd <span>.</span></h1>
+                <p>Gosto de criar produtos frontend sólidos e escaláveis ​​com <br>ótimas experiências do usuário.</p>
+                <div class="texto">
+                    <p class="p1">Sou um desenvolvedor front-end com foco em criação de interfaces modernas, acessíveis e responsivas.</p>
+                    <p class="p2">Atualmente estudo e trabalho com HTML e CSS, buscando sempre melhorar a performance e usabilidade das aplicações que desenvolvo.</p>
+                </div>
+        </section>
+        <img src="imagens/perfil.png" alt="">
+    </div>
+    <picture>
+        <div class="imgpq">
+            <img src="imagens/perfil.png" alt="">
+                <source media="(max-width: 767px)" srcset="imagens/perfil.png" type="image/png">
+        </div>
+</picture>
+    <main>
+        <div class="prin2">
+            <div class="bloco1" >
+                <div class="texto1">
+                    <h1>HTML</h1>
+                    <p>HTML (HyperText Markup Language) é a linguagem base da web. Ele define a estrutura de uma página, organizando elementos como títulos, parágrafos, imagens, links, listas, formulários e muito mais.</p>
+                </div>
+                <img src="imagens/linha3.png" alt="">
+            </div>
+            <div class="bloco2">
+                <img srcset="imagens/linha2.png" alt="">
+                <div class="texto2">
+                    <h1>CSS</h1>
+                    <p>CSS (Cascading Style Sheets) é a linguagem usada para estilizar páginas HTML. Com ele, é possível controlar cores, fontes, espaçamentos, layouts responsivos, animações e muito mais.</p>
+                </div>
+            </div>
+        </div>
+        <div class="prin3">
+             <div class="bloco3">
+                <h1>Sobre Mim</h1>
+                <p>Me chamo Lucas, sou um desenvolvedor web com foco em front-end , criando e gerenciando o front-end de sites e aplicativos web, o que leva ao sucesso geral do produto. Confira alguns dos meus trabalhos na seção Projetos . <br><br>
+                    Estou aberto a oportunidades de emprego nas quais eu possa contribuir, aprender e crescer. Se você tiver uma boa oportunidade que corresponda às minhas habilidades e experiência, não hesite em entrar em contato .
+                </p>
+             </div>
+             <img src="imagens/tela-code.png" alt="">
+        </div>
+    </main>
+    <footer>
+        <div>
+            <a href="#">linkedin</a>
+            <a href="#" target="blank">lucasnm141001@gmail.com</a>
+            <a href="#">eolucas062</a>
+        </div>
+    </footer>
+    <script>
+        function clickMenu() {
+            itens.style.display= 'block'
+
+            }
+            function closeMenu(){
+                itens.style.display= 'none'
+            }   
+        </script>
+</body>
+</html>
